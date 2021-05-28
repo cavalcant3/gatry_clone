@@ -7,9 +7,9 @@ const Root = () => {
   return (
     <Router>
       <Switch>
+        <Route patch="/" component={PagesPromotionSearch} />
         <Route patch="/create" component={PagesPromotionForm} />
         <Route patch="/edit/:id" component={PagesPromotionForm} />
-        <Route patch="/" component={PagesPromotionSearch} />
       </Switch>
     </Router>
   );
